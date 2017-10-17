@@ -1,0 +1,8 @@
+<% @upload.each do|s| %>
+<p>
+	<%= s.name %> | <%= image_tag(s.file)  %>	
+</p>
+
+
+<% end %>
+<%= link_to 'new form', new_upload_path  %>
